@@ -10,7 +10,7 @@ public class P7
 {
 	public static void main(String[] args) throws IOException
 	{
-		// ë””ë ‰í† ë¦¬ í™•ì¸
+		// µğ·ºÅä¸® ³»¿ë È®ÀÎ
 		Path path = Paths.get("C:/windows/system32/drivers/etc");
 		
 		DirectoryStream<Path> ds = Files.newDirectoryStream(path);
@@ -18,11 +18,11 @@ public class P7
 		{
 			if(Files.isDirectory(p))
 			{
-				System.out.println("ë””ë ‰í† ë¦¬ : " + p.getFileName());
+				System.out.println("µğ·ºÅä¸® : " + p.getFileName());
 			}
 			else
 			{
-				System.out.print("íŒŒì¼ : " + p.getFileName());
+				System.out.print("ÆÄÀÏ : " + p.getFileName());
 				System.out.println("(" + Files.size(p) + ")");
 			}
 		}

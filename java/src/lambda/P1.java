@@ -62,6 +62,5 @@ public class P1
 		mif3 = (a, b)-> a+b;
 		System.out.println(mif3.action(5, 4));
 		
-		
 	}
 }

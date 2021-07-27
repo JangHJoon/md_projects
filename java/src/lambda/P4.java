@@ -9,17 +9,17 @@ public class P4
 	{
 		Path path = Paths.get("C:/windows/system32/drivers/etc/hosts");
 		
-		System.out.println("íŒŒì¼ ì´ë¦„ : " + path.getFileName());
-		System.out.println("ìƒìœ„ í´ë” : " + path.getParent().getFileName());
+		System.out.println("ÆÄÀÏ ÀÌ¸§ : " + path.getFileName());
+		System.out.println("»óÀ§ Æú´õ : " + path.getParent().getFileName());
 		
-		System.out.println("ê²½ë¡œ ê¸¸ì´ : " + path.getNameCount());
-		System.out.print("í˜„ì¬ ê²½ë¡œ : ");
+		System.out.println("°æ·Î ±æÀÌ : " + path.getNameCount());
+		System.out.print("ÇöÀç °æ·Î : ");
 		for(int i=0 ; i<path.getNameCount() ; i++)
 		{
 			System.out.print(path.getName(i) + "/");
 		}
 		
-		System.out.print("\ní˜„ì¬ ê²½ë¡œ : ");
+		System.out.print("\nÇöÀç °æ·Î : ");
 		for(Path p : path)
 		{
 			System.out.print(p.getFileName() + "/"); 

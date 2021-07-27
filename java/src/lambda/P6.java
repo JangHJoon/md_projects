@@ -14,26 +14,26 @@ public class P6
 		System.out.println(path);
 		if(Files.isDirectory(path))
 		{
-			System.out.println("ë””ë ‰í† ë¦¬ì…ë‹ˆë‹¤.");
+			System.out.println("µğ·ºÅä¸®ÀÔ´Ï´Ù.");
 		}
 		if(Files.isRegularFile(path))
 		{
-			System.out.println("ì¼ë°˜ íŒŒì¼ì…ë‹ˆë‹¤.");
+			System.out.println("ÀÏ¹İ ÆÄÀÏÀÔ´Ï´Ù.");
 		}
-		System.out.println("í¬ê¸° : " + Files.size(path));
-		System.out.println("ì†Œìœ ì : " + Files.getOwner(path).getName());
+		System.out.println("Å©±â : " + Files.size(path));
+		System.out.println("¼ÒÀ¯ÀÚ : " + Files.getOwner(path).getName());
 		if(Files.isHidden(path)) 
 		{
-			System.out.println("ìˆ¨ê¹€ íŒŒì¼ì…ë‹ˆë‹¤.");
+			System.out.println("¼û±è ÆÄÀÏÀÔ´Ï´Ù.");
 		}
 		if(Files.isReadable(path))
 		{
-			System.out.println("ì½ê¸° ê°€ëŠ¥í•©ë‹ˆë‹¤.");
+			System.out.println("ÀĞ±â °¡´ÉÇÕ´Ï´Ù.");
 		}
 		if(Files.isWritable(path))
 		{
-			System.out.println("ìˆ˜ì • ê°€ëŠ¥í•©ë‹ˆë‹¤.");
+			System.out.println("¼öÁ¤ °¡´ÉÇÕ´Ï´Ù.");
 		}
-		System.out.println("ìµœì¢… ìˆ˜ì • ì‹œê°„ : " + Files.getLastModifiedTime(path));
+		System.out.println("ÃÖÁ¾ ¼öÁ¤ ½Ã°£ : " + Files.getLastModifiedTime(path));
 	}
 }

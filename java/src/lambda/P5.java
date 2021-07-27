@@ -13,13 +13,13 @@ public class P5
 		
 		for(FileStore s : fs.getFileStores())
 		{
-			System.out.println("ë“œë¼ì´ë²„ ì´ë¦„ : " + s.name());
-			System.out.println("íŒŒì¼ ì‹œìŠ¤í…œ : " + s.type());
+			System.out.println("µå¶óÀÌ¹ö ÀÌ¸§ : " + s.name());
+			System.out.println("ÆÄÀÏ ½Ã½ºÅÛ : " + s.type());
 			long total = s.getTotalSpace();
 			long free = s.getUnallocatedSpace();
-			System.out.println("ì „ì²´ ê³µê°„ : " + total + " bytes");
-			System.out.println("ì‚¬ìš© ì¤‘ì¸ ê³µê°„ : " + (total - free) + " bytes");
-			System.out.println("ì‚¬ìš© ê°€ëŠ¥í•œ ê³µê°„ : " + free + " bytes");
+			System.out.println("ÀüÃ¼ °ø°£ : " + total + " bytes");
+			System.out.println("»ç¿ë ÁßÀÎ °ø°£ : " + (total - free) + " bytes");
+			System.out.println("»ç¿ë °¡´ÉÇÑ °ø°£ : " + free + " bytes");
 			System.out.println();
 		}
 	}
